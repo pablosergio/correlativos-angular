@@ -1,0 +1,14 @@
+<div class="ui-g maxHeight">
+    <div class="ui-g-12 ui-g-nopad">
+        <div class="ui-g-12 ui-g-nopad">
+            <p-menubar [model]="items">
+    			<span style="margin-right: 8px" class="glyphicon glyphicon-user"></span>{{username}}
+    			<button pButton label="Logout" icon="fa-sign-out" (click)= "logout()"></button>
+			</p-menubar>
+			<router-outlet></router-outlet>
+        </div>
+    </div>
+    <footer class="ui-g-12 panel-footer">
+        Footer
+    </footer>
+</div>
